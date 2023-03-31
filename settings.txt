@@ -1,4 +1,4 @@
-{"site_url":"http://localhost:8000",
+{"site_url":"http://medfusian.github.io",
 "site_title": "Влад Шумигай",
 "description": "Влад Шумигай - портфолио, резюме и блог разработчика",
 "keywords": "Веб-разработка на Python, бэкенд на Django и Flask",
