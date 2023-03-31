@@ -1,4 +1,6 @@
-import sys, json
+import json
+import sys
+
 from flask import Flask, render_template
 from flask_flatpages import FlatPages, pygments_style_defs
 from flask_frozen import Freezer
@@ -30,11 +32,11 @@ def index():
     return render_template('index.html', cards=cards, bigheader=True, **settings, tags=tags)
 
 
-@app.route('/portfolio/<name>/')
-def card(name):
-    path = '{}/{}'.format(PORT_DIR, name)
-    card = flatpages.get_or_404(path)
-    return render_template('card.html', card=card)
+# @app.route('/portfolio/<name>/')
+# def card(name):
+#     path = '{}/{}'.format(PORT_DIR, name)
+#     card = flatpages.get_or_404(path)
+#     return render_template('card.html', card=card)
 
 
 @app.route('/pygments.css')
